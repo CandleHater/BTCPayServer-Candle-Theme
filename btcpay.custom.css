@@ -1,0 +1,62 @@
+/* use casa theme */
+@import 'default.css';
+
+:root {
+    --btcpay-brand-light: #ffd18c;
+    --btcpay-brand-medium: #FF9900;
+    --btcpay-brand-dark: #404040;
+    --btcpay-brand-darker: #3e3e3e;
+    --btcpay-brand-darkest: #101010;
+    
+    --btcpay-color-primary-backdrop: #fdd1a4;
+    --btcpay-color-primary-accent: #ff5e00;
+    
+    --btcpay-color-neutral-100: #fff9f1;
+    --btcpay-color-neutral-200: #fcedd7;
+    --btcpay-color-neutral-300: #f3e1c6;
+    --btcpay-color-neutral-400: #d7cda7;
+    --btcpay-color-neutral-500: #a09272;
+    --btcpay-color-neutral-600: #ada380;
+    --btcpay-color-neutral-700: #8b6f30;
+    --btcpay-color-neutral-800: #342b13;
+    --btcpay-color-neutral-900: #20180d;
+}
+
+/* headlines */
+h1, h2, h3, h4, h5 {
+    text-shadow: 1px 1px var(--btcpay-brand-darkest);
+}
+
+/* card - box */
+.card-deck .card:hover:before {
+    content: "";
+    z-index: -10;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    box-shadow: 0 0 200px #484848;
+}
+
+/* card - img */
+img.card-img-top {
+    transition: 333ms ease-in-out;
+    filter: grayscale(60%);
+}
+.card-deck .card:hover img.card-img-top {
+    transform: scale(1.08);
+    filter: none;
+}
+
+/* card - img same height */
+@media (min-width: 768px) {
+    img.card-img-top {
+        object-fit: cover;
+        height: 180px;
+    }
+}
+
+/* fixes/improvements */
+.form-control {
+    padding: 0.3rem 0.4rem;
+    background-clip: unset;
+}
