@@ -242,14 +242,7 @@ label {
 }
 
 .expired .modal-content:after {
-    background: linear-gradient(
-        50deg,
-        red,
-        red,
-        #ff9700,
-        red,
-        red
-        );
+    background: red;
 }
 .expired__body {
     background: rgba(255, 255, 255, .8);
