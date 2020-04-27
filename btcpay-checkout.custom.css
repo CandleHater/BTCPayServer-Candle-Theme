@@ -16,11 +16,12 @@ label {
     opacity: 1 !important;
 }
 
+/* header */
 .header {
     background: none;
 }
 .header::after {
-    margin: 5px;
+    margin: 5px 0 0 0;
     content: "Thank you! -🕯️";
     text-shadow: 1px 1px black;
     font-size: 1.6em;
@@ -33,16 +34,23 @@ label {
 }
 .top-header {
     color: #fff;
-    background-color: rgba(0, 0, 0, .5);
+    background: transparent;
 }
-.top-header .timer-row {
-    background: none;
+.top-header .header {
+    margin-bottom: 1px;
+}
+.top-header > div {
+    background-color: rgba(0, 0, 0, .5) !important;
 }
 
+.top-header .timer-row {
+    text-shadow: 1px 1px black;
+}
 .top-header .timer-row__spinner svg {
     fill: #ffcd82;
 }
 
+/* action button */
 .action-button {
     background-color: rgba(247, 147, 26, .85);
     border-color: #c76d00;
@@ -52,20 +60,33 @@ label {
     background-color: rgba(247, 147, 26, .95);
 }
 
+/* payment */
+.payment-tabs__slider {
+    background-color: #444;
+}
 .payment-tabs__tab {
     color: #444 !important;
 }
-.payment-tabs__tab.active
-    background: rgba(166, 166, 166, .15);
+.payment-tabs__tab.active {
+    background: rgba(255, 255, 255, .25);
 }
-.payment-tabs__slider {
-    background-color: #444;
+.payment-tabs__tab:hover {
+    background: rgba(0, 0, 0, .1);
 }
 
 .payment-box {
     background: url(https://media3.giphy.com/media/Pw7f9kOfx8iOI/giphy.gif);
     background-position: center;
     background-size: cover;
+}
+
+.payment__currencies {
+    border: 2px solid transparent !important;
+    background: rgba(255, 255, 255, .25);
+}
+.payment__currencies:hover {
+    border: 2px solid transparent !important;
+    background: rgba(255, 255, 255, .5);
 }
 .payment__scan svg {
     box-shadow: 0 0 0 5px rgba(255, 255, 255, .85);
@@ -74,6 +95,7 @@ label {
     fill: rgba(255, 255, 255, .85);
 }
 
+/* btnGroupLnd */
 .btnGroupLnd {
     background: none;
 }
@@ -94,16 +116,6 @@ label {
     background-color: rgba(247, 147, 26, .95);
 }
 
-.text-muted,
-.text-muted a {
-    color: #9c9c9c !important;
-}
-
-.prettydropdown > ul {
-    background: #7b7b7b;
-    color: white;
-}
-
 .manual__step-two__instructions {
     padding: 15px 10px 15px;
     margin-bottom: 15px;
@@ -122,6 +134,10 @@ label {
     background: rgba(255, 255, 255, .8);
     color: #101010;
 }
+#recommended-fee {
+    color: white;
+    text-shadow: 1px 1px black;
+}
 
 .order-details > * {
     color: #444;
@@ -139,7 +155,7 @@ label {
 }
 
 .separatorGem {
-    background: black;
+    background: #4a4a4a;
 }
 
 @media screen and (max-width: 575px) {
@@ -208,12 +224,21 @@ label {
     }
 }
 
+/* footer */
 #prettydropdown-DefaultLang {
     margin-top: 15px;
 }
+.prettydropdown > ul {
+    background: #7b7b7b;
+    color: white;
+}
+.powered__by__btcpayserver a {
+    color: #a9a9a9 !important;
+}
 
+/* paid */
 .paid .payment-box {
-    background: url(https://media0.giphy.com/media/mxB3Vu9ckNZiU/giphy.gif?cid=ecf05e4…&rid=giphy.gif);
+    background: url(https://media0.giphy.com/media/mxB3Vu9ckNZiU/giphy.gif);
     min-height: 270px;
 }
 .paid .action-button,
@@ -238,6 +263,11 @@ label {
     background: hsla(0, 0, 0, .4);
     padding: 1em;
     margin: 1em;
+}
+
+/* expired */
+.expired .header {
+    display: none;
 }
 
 .expired .payment-box {
