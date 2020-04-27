@@ -19,6 +19,7 @@ label {
 /* header */
 .header {
     background: none;
+    border-radius: 5px 5px 0 0;
 }
 .header::after {
     margin: 5px 0 0 0;
@@ -78,6 +79,7 @@ label {
     background: url(https://media3.giphy.com/media/Pw7f9kOfx8iOI/giphy.gif);
     background-position: center;
     background-size: cover;
+    border-radius: 0 0 5px 5px;
 }
 
 .payment__currencies {
@@ -86,7 +88,7 @@ label {
 }
 .payment__currencies:hover {
     border: 2px solid transparent !important;
-    background: rgba(255, 255, 255, .5);
+    background: rgba(0, 0, 0, .1);
 }
 .payment__scan svg {
     box-shadow: 0 0 0 5px rgba(255, 255, 255, .85);
@@ -148,8 +150,8 @@ label {
     color: #444;
 }
 
-.fa-angle-double-down,
-.fa-angle-double-up {
+.buyerTotalLine .fa-angle-double-down,
+.buyerTotalLine .fa-angle-double-up {
     padding-bottom: 3px;
     opacity: .5;
 }
