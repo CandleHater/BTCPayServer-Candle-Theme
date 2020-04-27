@@ -55,6 +55,9 @@ label {
 .payment-tabs__tab {
     color: #444 !important;
 }
+.payment-tabs__tab.active
+    background: rgba(166, 166, 166, .15);
+}
 .payment-tabs__slider {
     background-color: #444;
 }
