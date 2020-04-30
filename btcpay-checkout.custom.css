@@ -159,6 +159,13 @@ label {
 .separatorGem {
     background: #4a4a4a;
 }
+.close-icon {
+    z-index: 100;
+    top: -40px;
+    right: -50px;
+    color: red;
+    font-size: 2em;
+}
 
 @media screen and (max-width: 575px) {
     .modal-dialog {
