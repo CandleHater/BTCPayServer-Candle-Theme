@@ -1,12 +1,19 @@
-/* use casa theme */
-/* @import 'default.css'; */
+/*
+    Use the theme "Default (Dark)" and add this CSS file as in the server setting "Custom Theme CSS file".
+*/
 
 :root {
+    --btcpay-brand-primary: #f7931a;
+    --btcpay-brand-secondary: #ffffff;
+    --btcpay-brand-tertiary: #ffaf4f;
+    
     --btcpay-brand-light: #ffd18c;
     --btcpay-brand-medium: #FF9900;
     --btcpay-brand-dark: #404040;
     --btcpay-brand-darker: #3e3e3e;
     --btcpay-brand-darkest: #101010;
+    
+    --btcpay-body-bg: #1d1d1d;
     
     --btcpay-color-primary-backdrop: #fdd1a4;
     --btcpay-color-primary-accent: #ff5e00;
